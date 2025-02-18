@@ -1,0 +1,76 @@
+.btn {
+	padding: 18px 31px;
+	color: #fff;
+	text-align: center;
+	font-size: 0.6rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	transition: 0.3s ease;
+	border: 1px solid var(--ye);
+	background: var(--ye);
+	cursor: pointer;
+	text-transform: uppercase;
+	box-shadow: 0 0 19px rgba(251, 113, 0, 0.6);
+	border-radius: 60px;
+	svg {
+		fill: var(--black);
+		transition: 0.3s ease;
+	}
+	&.w-100 {
+		width: 100%;
+	}
+	&:hover {
+		box-shadow: none;
+		svg {
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.btn__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.btn__choose {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.btn__send {
+	width: 480px;
+	margin-top: 30px;
+}
+
+.iti {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+.header.btn.my-profile__active{
+    background: white !important;
+    color: black !important;
+}
+
+@media (max-width: 575.98px) {
+
+	.btn__wrapper {
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 500px) {
+	.btn {
+		width: 100%;
+		padding: 15px;
+	}
+}

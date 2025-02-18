@@ -1,0 +1,426 @@
+@import url('/assets/fonts/stylesheet.css');
+@import url('/assets/libraries/bootstrap-grid/bootstrap-grid.min.css');
+@import url('/assets/libraries/normalize/normalize.css');
+@import url('/assets/css/includes/modal_success.css');
+
+@import './includes/variables';
+@import './includes/reset';
+@import './includes/header';
+@import './includes/footer';
+@import './includes/animations';
+@import './includes/forms';
+@import './includes/buttons';
+@import './includes/modal';
+@import './includes/pages';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+    // border: 1px red solid;
+}
+
+
+
+
+.footer__wrapper_inner_link {
+    text-align: center;
+    font-family: Rawline;
+    line-height: 130%;
+}
+
+
+
+.iti {
+    position: relative;
+    display: inline-block;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.iti--separate-dial-code .iti__selected-dial-code {
+    margin-left: 6px;
+    font-size: 16px;
+}
+
+.section-title {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 60px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 130px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 40px;
+    align-items: center;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    transition: 300ms;
+    width: max-content;
+    margin-top: 40px;
+
+    &:hover {
+        background: var(--bluehover);
+
+        i {
+            transform: rotate(0deg);
+        }
+    }
+
+    i {
+        transform: rotate(-45deg);
+        transition: 300ms;
+    }
+}
+
+.button-right {
+    align-self: flex-end;
+}
+
+.button-left {
+    align-self: flex-start;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Rawline';
+    color: var(--black);
+    background: var(--white);
+}
+
+html,
+body {
+    font-size: 20px;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+
+// pagination style
+
+.pagination {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.page-item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #666c85;
+    cursor: pointer;
+    transition: 300ms !important
+}
+
+.page-item a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.page-item:hover {
+    background: linear-gradient(85deg, var(--blue) -18.08%, var(--blue) 90.14%);
+    box-shadow: 0px 0px 9.8px 0px rgba(0, 188, 255, .5)
+}
+
+.page-item.active {
+    background: linear-gradient(85deg, var(--blue) -18.08%, var(--blue) 90.14%);
+    box-shadow: 0px 0px 9.8px 0px rgba(0, 188, 255, .5)
+}
+
+.pg {
+    display: flex;
+    justify-content: center
+}
+
+
+// pagination style none
+
+
+.relative {
+    position: relative;
+}
+
+.t-c {
+    text-align: center !important;
+}
+
+.t-l {
+    text-align: left !important;
+}
+
+.or {
+    order: 0;
+}
+
+
+svg {
+    fill: white;
+    color: #fff;
+}
+
+
+.swiper-scrollbar {
+    background: none;
+}
+
+.swiper-scrollbar-drag {
+    background: none;
+}
+
+.g {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
+
+main {
+    margin-top: 100px;
+}
+
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.telCountry {
+    max-width: 100%;
+    width: 100%;
+    height: 55px;
+    border: 1px solid #e3e4e4;
+    font-size: 14px !important;
+}
+
+
+
+.header__item_inner-logo {
+    width: 210px;
+    height: 50px;
+
+    img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+
+.tab__nav--scrollable .swiper-slide {
+    width: 40% !important;
+}
+
+.feedback__slide {
+    max-width: 670px !important;
+}
+
+// Pagination
+
+.feedback__card>.swiper-pagination {
+    position: static;
+    margin-top: 35px;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: #2D4679;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #FFFFFF;
+}
+
+.contacts__row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+
+
+@media (min-width: 1920px) {
+    .container-fluid {
+        max-width: 1920px;
+    }
+}
+
+@media (max-width: 1300px) {
+    section {
+        margin-bottom: 110px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-title {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+
+}
+
+@media (max-width: 1060px) {
+    .contacts {
+        flex-direction: column;
+        // gap: 65px;
+    }
+
+    .contacts__img {
+        width: 512px;
+        height: 408px;
+        margin-bottom: 50px;
+    }
+
+    .contacts__info {
+        padding: 50px 0 65px 0;
+    }
+
+    .info__content {
+        flex-direction: column;
+    }
+
+    .info__fill {
+        width: 80%;
+    }
+
+    .info__fill_name {
+        max-width: 100%;
+    }
+
+    .info__offer {
+        width: 80%;
+    }
+
+
+}
+
+
+@media (max-width: 1000px) {
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    section {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+
+
+    .tab .tablinks {
+        padding: 17px 0px !important;
+    }
+
+    .tab__nav--scrollable {
+        gap: 40px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .tab__nav--scrollable {
+        gap: 25px;
+    }
+
+    section {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 721px) {}
+
+@media (max-width: 700px) {
+    main {
+        margin-top: 100px;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .container-fluid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+@media (max-width: 575px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 450px) {
+    main {
+        margin-top: 80px;
+    }
+
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .page-item {
+        width: 40px;
+        height: 40px
+    }
+
+    .page-link {
+        font-size: 14px
+    }
+
+    .button-width {
+        width: 100%;
+    }
+}
+
+
+
+@media(max-width: 400px) {
+
+    .page-item {
+        width: 35px;
+        height: 35px
+    }
+
+    .page-link {
+        font-size: 12px
+    }
+}

@@ -1,0 +1,42 @@
+.socials {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+	&__item {
+		width: 46px;
+		height: 46px;
+		border: 1px solid #7d8ba6;
+		border-radius: 50%;
+		transition: 0.3s ease;
+		svg {
+			fill: #7d8ba6;
+		}
+		&:hover {
+			background: var(--ye);
+			border-color: var(--ye);
+			box-shadow: 0 0 19px rgba(251, 113, 0, 0.6);
+			svg {
+				fill: var(--white);
+			}
+		}
+	}
+}
+
+.iti {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+@media (max-width: 991.98px) {
+	.socials {
+		gap: 20px;
+		&__item {
+			width: 34px;
+			height: 34px;
+			svg{
+				width: 13px;
+				height: 13px;
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+:root {
+    --black: #FFF;
+    --white: #02050A;
+    // --blue: #3F5AF3;
+    // --bluehover: #526af5;
+    --blue: #35da00;
+    --bluehover: #4fe31f;
+    --dark: #252525;
+    // --grey: #B0B2B7;
+    --grey: black;
+    --verygrey: #696969;
+    // --wblack: #1E2228;
+    --wblack: #B0B2B7;
+}
+
+
+
+.title {}
+
+.block {
+    display: none !important;
+}
+
+.iti {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+@media (max-width: 575.98px) {
+    .title {}
+}

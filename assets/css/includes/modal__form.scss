@@ -1,0 +1,362 @@
+.app {
+    max-width: 1140px;
+    width: 100%;
+
+    &-text {
+        color: var(--black);
+        font-size: 24px !important;
+        text-align: center;
+    }
+
+    .input {
+        p {
+            color: var(--black);
+        }
+
+        label {
+            color: var(--black);
+        }
+
+        &__content {
+
+            input {
+                border: 1px solid #E3E3E3 !important;
+            }
+
+            textarea {
+                border: 1px solid #E3E3E3 !important;
+            }
+        }
+    }
+
+    .button-form {
+        margin-top: 120px;
+    }
+}
+
+
+// modal name edit
+
+.popup__tel,
+.popup {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #F7F8FC;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotateX(60deg) scale(0.5);
+
+    opacity: 0;
+    transition: 500ms;
+    color: black;
+
+    .popup__content-close {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        path {
+            transition: 300ms;
+        }
+
+        &:hover {
+            svg{
+                fill: #F18331;
+                color: #F18331;
+            }
+
+            path {
+                fill: var(--red);
+            }
+        }
+    }
+}
+
+.popup__tel.modal-show,
+.popup.modal-show {
+    opacity: 1;
+    top: 0;
+    z-index: 999;
+    transform: rotateX(0deg) scale(1);
+
+    height: 100%;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.popup__body-name {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 30px 30px;
+}
+
+.popup__content {
+    max-width: 1140px;
+    height: 100%;
+
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+
+
+
+    label {
+        span {
+            color: red;
+        }
+    }
+
+}
+
+.popup__form {
+    width: 100%;
+}
+
+.info__fill_input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        p {
+            color: var(--black);
+            font-family: HelveticaNeueCyr;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 10px;
+
+            span {
+                color: red;
+            }
+        }
+
+        input {
+            padding: 13px 15px;
+            border: 1px solid var(--grey);
+            background: #F8F8F8;
+            overflow: none;
+            transition: 300ms;
+            font-family: HelveticaNeueCyr;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.3px;
+            resize: none;
+
+            &:hover {
+                border: 1px solid #00BCFF;
+            }
+
+            &:focus-visible {
+                outline: none;
+                border: 1px solid #00BCFF;
+            }
+        }
+
+        textarea {
+            padding: 13px 15px;
+            border: 1px solid var(--grey);
+            background: #F8F8F8;
+            overflow: none;
+            transition: 300ms;
+            font-family: HelveticaNeueCyr;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.3px;
+            resize: none;
+
+            &:hover {
+                border: 1px solid #00BCFF;
+            }
+
+            &:focus-visible {
+                outline: none;
+                border: 1px solid #00BCFF;
+            }
+        }
+    }
+}
+
+.info__fill_name {
+    max-width: 100%;
+}
+
+.pupup__title {
+    color: var(--black);
+    color: #000;
+    font-family: HelveticaNeueCyr;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    text-align: center;
+}
+
+.popup__close-tel,
+.popup__close-name {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+
+
+.balance__btn-exit {
+    width: 100%;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.modal__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.balance__btn-reset {
+    display: block;
+    background: #FAFAFB;
+    padding: 15px 40px;
+    text-align: center;
+    color: var(--black);
+    font-family: HelveticaNeueCyr;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 150%;
+    border-bottom: 1px white dashed;
+    transition: 300ms;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--red);
+    }
+}
+
+.balance__btn-save {
+    color: var(--white);
+    font-family: HelveticaNeueCyr;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 150%;
+    padding: 15px 40px;
+    background: var(--red);
+    width: max-content;
+    display: inline-block;
+}
+
+.image__add__row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-y: scroll;
+    color: 16px;
+
+    #imagePreview {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+        overflow-y: scroll;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    input {
+        font-size: 16px;
+        background: #000;
+        color: transparent !important;
+        width: 80px;
+        height: 80px;
+    }
+}
+
+
+.info__fill_input .input {
+    margin-bottom: 0;
+}
+
+
+
+
+@media (max-width: 620px) {
+    .popup__body-name{
+        padding: 60px 20px 20px;
+    }
+
+    .popup__tel .popup__content-close, .popup .popup__content-close  {
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        path {
+            transition: 300ms;
+        }
+
+        &:hover {
+            svg{
+                fill: #F18331;
+                color: #F18331;
+            }
+
+            path {
+                fill: var(--red);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 450px) {
+    .popup__tel .popup__content-close, .popup .popup__content-close{
+       top: 20px; 
+    }
+    
+    .app .input{
+        margin-bottom: 25px;
+    }
+}

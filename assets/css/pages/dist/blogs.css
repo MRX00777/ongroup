@@ -1,0 +1,34 @@
+.blog {
+  margin-top: 30px !important;
+  margin-bottom: 0px !important;
+}
+.blog_cards {
+  height: auto !important;
+}
+.blog_cards_card {
+  height: 400px !important;
+}
+
+.footer_content {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+}
+
+@media (max-width: 800px) {
+  .footer_content {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+}
+@media (max-width: 600px) {
+  .footer_content {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+}
+@media (max-width: 400px) {
+  .footer_content {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
